@@ -10,7 +10,8 @@
   <body>
     <div class="container">
       <h1>Exercise tracker</h1>
-      <form action="/api/users" method="post">
+     <div class="form-container " >
+      <form  class="user-form" action="/api/users" method="post">
         <h3>Create a New User</h3>
         <p><code>POST /api/users</code></p>
         <input id="uname" type="text" name="username" placeholder="username" />
@@ -25,6 +26,7 @@
         <input id="date" type="text" name="date" placeholder="date (yyyy-mm-dd)" />
         <input type="submit" value="Submit" />
       </form>
+     </div>
       <p>
         <strong>GET user's exercise log: </strong>
         <code>GET /api/users/:_id/logs?[from][&amp;to][&amp;limit]</code>
